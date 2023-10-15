@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <style>
+        .quizform {
+            text-align: left;
+            display: none;
+        }
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(121, 9, 95, 0.24) 36%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .question {
+            text-align: left;
+            padding: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/OIP.IakIPHgV9iHl58rS8lyaagHaGj?w=197&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="max-width:100%;height:auto;">
+    <h1>Welcome to the Quiz</h1>
+    <div class="question" style="display: flex; justify-content: center; align-items: center;">
+        <button onclick="startQuiz(1)" type="button">Question 1</button>
+        <button onclick="startQuiz(2)" type="button">Question 2</button>
+        <button onclick="startQuiz(3)" type="button">Question 3</button>
+        <button onclick="startQuiz(4)" type="button">Question 4</button>
+        <button onclick="startQuiz(5)" type="button">Question 5</button>
+        <button onclick="startQuiz(6)" type="button">Question 6</button>
+        <button onclick="startQuiz(7)" type="button">Question 7</button>
+        <button onclick="startQuiz(8)" type="button">Question 8</button>
+        <button onclick="startQuiz(9)" type="button">Question 9</button>
+        <button onclick="startQuiz(10)" type="button">Question 10</button>
+    </div>
+    <div class="question">
+        <form id="q1" class="quizform">
+            <p>1) What is the capital of Telangana?</p>
+            <input type="radio" name="capital1" value="delhi"> Delhi<br>
+            <input type="radio" name="capital1" value="hyderabad"> Hyderabad<br>
+            <input type="radio" name="capital1" value="mumbai"> Mumbai<br>
+            <input type="radio" name="capital1" value="chennai"> Chennai<br>
+            <input type="button"  value="Submit" onclick="submitAnswer(1)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q2" class="quizform">
+            <p>2) What is the capital of Andhra Pradesh?</p>
+            <input type="radio" name="capital2" value="delhi"> Delhi<br>
+            <input type="radio" name="capital2" value="hyderabad"> Hyderabad<br>
+            <input type="radio" name="capital2" value="mumbai"> Mumbai<br>
+            <input type="radio" name="capital2" value="amaravati"> Amaravati<br>
+            <input type="button" value="Submit" onclick="submitAnswer(2)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q3" class="quizform">
+            <p>3) What is the largest planet in our solar system?</p>
+            <input type="radio" name="planet3" value="earth"> Earth<br>
+            <input type="radio" name="planet3" value="venus"> Venus<br>
+            <input type="radio" name="planet3" value="jupiter"> Jupiter<br>
+            <input type="radio" name="planet3" value="mars"> Mars<br>
+            <input type="button" value="Submit" onclick="submitAnswer(3)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q4" class="quizform">
+            <p>4) What is the largest mammal on Earth?</p>
+            <input type="radio" name="mammal4" value="elephant"> Elephant<br>
+            <input type="radio" name="mammal4" value="whale"> Blue Whale<br>
+            <input type="radio" name="mammal4" value="lion"> Lion<br>
+            <input type="radio" name="mammal4" value="giraffe"> Giraffe<br>
+            <input type="button" value="Submit" onclick="submitAnswer(4)">
+        </form>
+    </div>
+
+
+    <div class="question">
+        <form id="q5" class="quizform">
+            <p>5) What is the largest ocean on Earth?</p>
+            <input type="radio" name="ocean5" value="atlantic"> Atlantic Ocean<br>
+            <input type="radio" name="ocean5" value="pacific"> Pacific Ocean<br>
+            <input type="radio" name="ocean5" value="indian"> Indian Ocean<br>
+            <input type="radio" name="ocean5" value="arctic"> Arctic Ocean<br>
+            <input type="button" value="Submit" onclick="submitAnswer(5)">
+        </form>
+    </div>
+
+
+    <div class="question">
+        <form id="q6" class="quizform">
+            <p>6) What gas do plants absorb from the atmosphere?</p>
+            <input type="radio" name="gas6" value="oxygen"> Oxygen<br>
+            <input type="radio" name="gas6" value="nitrogen"> Nitrogen<br>
+            <input type="radio" name="gas6" value="carbon"> Carbon Dioxide<br>
+            <input type="radio" name="gas6" value="helium"> Helium<br>
+            <input type="button" value="Submit" onclick="submitAnswer(6)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q7" class="quizform">
+            <p>7) Which planet is known as the Red Planet?</p>
+            <input type="radio" name="planet7" value="earth"> Earth<br>
+            <input type="radio" name="planet7" value="venus"> Venus<br>
+            <input type="radio" name="planet7" value="jupiter"> Jupiter<br>
+            <input type="radio" name="planet7" value="mars"> Mars<br>
+            <input type="button" value="Submit" onclick="submitAnswer(7)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q8" class="quizform">
+            <p>8) What is the largest organ in the human body?</p>
+            <input type="radio" name="organ8" value="heart"> Heart<br>
+            <input type="radio" name="organ8" value="liver"> Liver<br>
+            <input type="radio" name="organ8" value="skin"> Skin<br>
+            <input type="radio" name="organ8" value="brain"> Brain<br>
+            <input type="button" value="Submit" onclick="submitAnswer(8)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q9" class="quizform">
+            <p>9) Which gas do humans exhale when breathing out?</p>
+            <input type="radio" name="gas9" value="oxygen"> Oxygen<br>
+            <input type="radio" name="gas9" value="nitrogen"> Nitrogen<br>
+            <input type="radio" name="gas9" value="carbon"> Carbon Dioxide<br>
+            <input type="radio" name="gas9" value="helium"> Helium<br>
+            <input type="button" value="Submit" onclick="submitAnswer(9)">
+        </form>
+    </div>
+
+    <div class="question">
+        <form id="q10" class="quizform">
+            <p>10) What is the capital of France?</p>
+            <input type="radio" name="capital10" value="paris"> Paris<br>
+            <input type="radio" name="capital10" value="london"> London<br>
+            <input type="radio" name="capital10" value="berlin"> Berlin<br>
+            <input type="radio" name="capital10" value="madrid"> Madrid<br>
+            <input type="button" value="Submit" onclick="submitAnswer(10)">
+        </form>
+    </div>
+
+    <script>
+        var currentQuestion = 1;
+
+        function startQuiz(questionNumber) {
+            var currentForm = document.getElementById("q" + currentQuestion);
+            currentForm.style.display = "none";
+            var nextForm = document.getElementById("q" + questionNumber);
+            nextForm.style.display = "block";
+
+            currentQuestion = questionNumber;
+        }
+
+        function submitAnswer(questionNumber) {
+            var answer = document.querySelector('input[name="capital' + questionNumber + '"]:checked');
+
+            if (answer) {
+                var nextQuestion = questionNumber + 1;
+                if (nextQuestion <= 10) {
+                    startQuiz(nextQuestion);
+                } else {
+                    alert("Quiz Completed!");
+                }
+            } else {
+                alert("Please select an answer before submitting.");
+            }
+        }
+
+        startQuiz(1);
+    </script>
+</body>
+</html>
